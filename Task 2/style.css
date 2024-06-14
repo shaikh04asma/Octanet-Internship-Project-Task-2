@@ -1,0 +1,112 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url("bg\ img.avif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: black;
+}
+
+.container {
+  width: 500px;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  /* border: 2px solid black; */
+  border-radius: 10px;
+  margin: auto;
+  padding: 20px;
+  margin-top: 40px;
+  background: rgba(0, 0, 0, 0.359);
+    gap: 10px;
+}
+.todo-list {
+    border-bottom:2px solid rgb(207, 207, 207) ;
+  color: #fff;
+  width: 100%;
+  height: 50%;
+  
+}
+.add-btn {
+  width: 50px;
+  line-height: 30px;
+  padding: 5px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+
+  background: none;
+  border: none;
+  font-size: 1rem;
+  margin: 10px;
+  color: #fff;
+  font-weight: 800;
+}
+.add-btn:hover {
+  cursor: pointer;
+  background: none;
+  scale: 0.9;
+  border: none;
+  text-shadow: 4px 4px 5px rgb(93, 92, 92);
+}
+input {
+  margin: 30px;
+  width: 70%;
+  height: 30px;
+  border: none;
+  background: none;
+  border-bottom: 1px solid rgb(56, 62, 69);
+  outline: none;
+}
+input::placeholder {
+  color: rgb(109, 109, 109);
+}
+
+#todo-item {
+  font-size: 18px;
+  color: #fff;
+}
+.todo-list h2 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+p{
+    color: #fff;
+    font-size: 18px;
+    font-family: "LXGW WenKai TC", cursive;
+    font-weight: 700;
+}
+/* Edit box */
+#todos {
+    
+  display: none;
+  flex-direction: column;
+  gap: 0.5rem;
+  
+  width: 90%;
+  height: 50%;
+  margin: auto;
+  /* display: block; */
+}
+#todos li {
+  padding-top: 8px;
+  color: #fff;
+  /* list-style-type: square;  */
+  font-size: 18px;
+  font-family: "LXGW WenKai TC", cursive;;
+  display: flex;
+  justify-content: space-between;
+}
+#todos button{
+    padding: 10px 10px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    color: rgb(0, 255, 38); 
+}
+#todos button:hover{
+    background-color: #ddd;
+}
